@@ -1,1 +1,53 @@
-<h1>htmlTableSort example</h1>
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">                
+        <link rel="shortcut icon" href="http://localhost:8888/brik/brik-dvf/public/favicon-local.png" />
+        <title>HtmlTableSort</title>
+    </head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="shadow navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="mb-0 navbar-brand h1" href="">
+                <strong class="pt-1 pb-1 px-2 border rounded-pill">
+                    HtmlTableSort example
+                </strong>
+            </a>
+        </nav>
+    </header>
+  
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+        <div class="table-responsive">
+        <table id="sortable" class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th class="brik-header" scope="col">Date</th>
+                    <th class="brik-header" scope="col">User</th>
+                    <th class="brik-header" scope="col">Posts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-sort-value="2021-12-24 07:38:27.065+00">12/24/2021 07:38</td>
+                    <td>John Doe</td>
+                    <td data-sort-value="002">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+    
+<script src="https://raw.githubusercontent.com/r1d/htmlTableSort/master/src/htmltablesort.js"></script>
+
+<script>
+    window.onload = function(){
+        tableSort.init(document.getElementById("sortable"),0,'desc','','&nbsp;&darr;','&nbsp;&uarr;');
+        };
+</script>
+  
+</body>
+</html>
