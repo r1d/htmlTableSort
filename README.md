@@ -4,7 +4,7 @@ Dynamic sort an HTML table with arrows in pure javascript.
 - Author  : @r1d
 - Version : 1.0 
 - Date    : 2022-01-12
-- Example : [https://r1d.github.io/htmlTableSort/](https://r1d.github.io/htmlTableSort/)
+- Example : [https://r1d.github.io/htmlTableSort.js/](https://r1d.github.io/htmlTableSort.js/)
 
 Usage : 
 
