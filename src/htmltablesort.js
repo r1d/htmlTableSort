@@ -6,12 +6,12 @@
     Usage            : 
     
     window.onload = function(){
-        HtmlTableSort.init(document.getElementById("sortable"),0,'asc','&nbsp;&middot','&nbsp;&uarr;','&nbsp;&darr;');
+        HtmlTableSort.init('id-table',0,'asc','&nbsp;&middot','&nbsp;&uarr;','&nbsp;&darr;');
         };
  */
 
 var HtmlTableSort = {
-    init: function( table,           // table to make sortable
+    init: function( id,              // id of the table to make sortable
                     colSorted,       // default column sorted
                     colOrder,        // default column order 'asc' or 'desc'
                     NotSorted,       // text to display when not sorted
@@ -20,9 +20,10 @@ var HtmlTableSort = {
                     )
         {
         
-        var _this = this; // store context of this in the object
-        var th = table.tHead, i;
-        var lastTh=false;
+        var _this  = this; // store context of this in the object
+        var table  = document.getElementById(id);
+        var th     = table.tHead, i;
+        var lastTh =false;
 
         th && (th = th.rows[0]) && (th = th.cells);
 

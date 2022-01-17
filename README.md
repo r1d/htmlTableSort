@@ -12,6 +12,6 @@ Usage :
 <script src="src/htmltablesort.js"></script>
 
 window.onload = function(){
-    HtmlTableSort.init(document.getElementById("sortable"),0,'asc','&nbsp;&middot','&nbsp;&uarr;','&nbsp;&darr;');
+    HtmlTableSort.init('id-table',0,'asc','&nbsp;&middot','&nbsp;&uarr;','&nbsp;&darr;');
     };
 ```
