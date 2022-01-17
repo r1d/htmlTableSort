@@ -82,7 +82,7 @@ var HtmlTableSort = {
             va = a.cells[col].getAttribute('data-sort-value')==null ? a.cells[col].textContent.trim() : a.cells[col].getAttribute('data-sort-value');
             vb = b.cells[col].getAttribute('data-sort-value')==null ? b.cells[col].textContent.trim() : b.cells[col].getAttribute('data-sort-value');
 
-            return reverse * ( va.localeCompare(vb) );
+            return reverse * ( va.localeCompare(vb,'en', {numeric: true}) );
             });
 
         // append rows in new order
