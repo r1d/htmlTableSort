@@ -43,9 +43,9 @@ var HtmlTableSort = {
                 if(colOrder=='asc')
                     {
                     dir = 1 - dir;
-                    th[i].innerHTML +=AscSortedArrow;
+                    th[i].innerHTML += AscSortedArrow;
                     }
-                else th[i].innerHTML +=DescSortedArrow;
+                else th[i].innerHTML += DescSortedArrow;
                 lastTh=th[i];
                 }
             else th[i].innerHTML += NotSorted; // column not sorted
