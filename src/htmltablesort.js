@@ -1,10 +1,10 @@
 /*
     HtmlTableSort.js : Dynamic sort a HTML table with ASC and DESC order and arrows
     Author           : @r1d
-    Version          : 1.0
+    Version          : 1.1
     Date             : 2022-01-12
 
-    Usage:     
+    Usage:
         window.onload = function(){
             HtmlTableSort.init('id-table');
             };
@@ -12,8 +12,9 @@
      Options:
         - no arrows : HtmlTableSort.init('id-table','','','');
         - my arrows : HtmlTableSort.init('id-table','<i class="fas fa-sort"></i>','<i class="fas fa-sort-down"></i>','<i class="fas fa-sort-up"></i>');
+        
         - column sorted at start : <th data-sort="asc"> or <th data-sort="desc">
-        - udisallow sorting : <th data-sort="0">
+        - disallow sorting : <th data-sort="0">
         - special sorting : <td data-sort-value="value"> (for dates, ...)
  */
 
