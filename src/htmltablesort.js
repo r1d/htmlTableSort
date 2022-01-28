@@ -8,6 +8,10 @@
     window.onload = function(){
         HtmlTableSort.init('id-table');
         };
+    
+    - use attribute data-sort="asc" or "desc" on <th> header to define the column sorted at start
+    - use attribute data-sort="0" on <th> header to disallow sorting on column
+    - use attribute data-sort-value="value" on <td> cell for special sorting (for dates, ...)
  */
 
         var HtmlTableSort = {
