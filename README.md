@@ -18,8 +18,8 @@ window.onload = function(){
 
 Options:
 
-- no arrows : HtmlTableSort.init('id-table','','','');
-- my arrows : HtmlTableSort.init('id-table','<i class="fas fa-sort"></i>','<i class="fas fa-sort-down"></i>','<i class="fas fa-sort-up"></i>');
+- no arrows : `HtmlTableSort.init('id-table','','','');`
+- my arrows : `HtmlTableSort.init('id-table','<i class="fas fa-sort"></i>','<i class="fas fa-sort-down"></i>','<i class="fas fa-sort-up"></i>');`
 - column sorted at start : <th data-sort="asc"> or <th data-sort="desc">
 - udisallow sorting : <th data-sort="0">
 - special sorting : <td data-sort-value="value"> (for dates, ...)
