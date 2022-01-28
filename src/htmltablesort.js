@@ -3,15 +3,18 @@
     Author           : @r1d
     Version          : 1.0
     Date             : 2022-01-12
-    Usage            : 
-    
-    window.onload = function(){
-        HtmlTableSort.init('id-table');
-        };
-    
-    - use attribute data-sort="asc" or "desc" on <th> header to define the column sorted at start
-    - use attribute data-sort="0" on <th> header to disallow sorting on column
-    - use attribute data-sort-value="value" on <td> cell for special sorting (for dates, ...)
+
+    Usage:     
+        window.onload = function(){
+            HtmlTableSort.init('id-table');
+            };
+
+     Options:
+        - no arrows : HtmlTableSort.init('id-table','','','');
+        - my arrows : HtmlTableSort.init('id-table','<i class="fas fa-sort"></i>','<i class="fas fa-sort-down"></i>','<i class="fas fa-sort-up"></i>');
+        - column sorted at start : <th data-sort="asc"> or <th data-sort="desc">
+        - udisallow sorting : <th data-sort="0">
+        - special sorting : <td data-sort-value="value"> (for dates, ...)
  */
 
         var HtmlTableSort = {
