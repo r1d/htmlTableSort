@@ -9,7 +9,7 @@ Dynamic sort an HTML table on header click in pure javascript.
 Usage: 
 
 ```
-<script src="src/htmltablesort.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/r1d/htmlTableSort.js@master/src/htmltablesort.js"></script>
 
 window.onload = function(){
     HtmlTableSort.init('id-table');
